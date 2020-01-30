@@ -1,7 +1,7 @@
 ---
 title: "Star Wars Character Data"
 author: "Angela Zoss"
-date: "3/20/2019"
+date: "1/30/2020"
 output: html_document
 ---
 
@@ -36,7 +36,7 @@ starwars_chars <- starwars
 
 ```
 
-## Add a facet to the chart to create small multiples for each gender
+## Facets: Add a facet to the chart to create small multiples for each gender
 
 ```{r}
 
@@ -67,7 +67,7 @@ starwars_chars <- starwars
 ```
 
 
-## Add a label to (only) the heaviest character
+## Data inheritance: Add a label to (only) the heaviest character
 
 ```{r}
 

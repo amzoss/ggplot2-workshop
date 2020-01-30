@@ -1,7 +1,7 @@
 ---
 title: "Star Wars Character Data"
 author: "Angela Zoss"
-date: "8/14/2019"
+date: "1/30/2020"
 output: html_document
 ---
 
@@ -37,7 +37,7 @@ ggplot(starwars_chars) +
 
 ```
 
-## Add a facet to the chart to create small multiples for each gender
+## Facets: Add a facet to the chart to create small multiples for each gender
 
 ```{r}
 
@@ -73,7 +73,7 @@ ggplot(starwars_chars, aes(height,mass)) +
 ```
 
 
-## Add a label to (only) the heaviest character
+## Data inheritance: Add a label to (only) the heaviest character
 
 ```{r}
 
