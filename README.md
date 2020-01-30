@@ -1,4 +1,4 @@
-# ggplot2 Workshop, Fall 2019
+# ggplot2 Workshop, Spring 2020
 
 This repo contains files for a hands-on workshop on ggplot2, the visualization package for R.
 
