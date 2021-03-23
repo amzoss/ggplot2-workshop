@@ -1,7 +1,7 @@
 ---
 title: "Star Wars Character Data"
 author: "Angela Zoss"
-date: "1/30/2020"
+date: "3/23/2021"
 output: html_document
 ---
 
@@ -60,7 +60,23 @@ ggplot(starwars_chars, aes(height,mass)) +
 
 ```
 
-## Add a linear trend line
+## Data inheritance: Add a label to (only) the heaviest character
+
+```{r}
+
+# hint: you can use "data=" in a geom layer to use different data for that layer 
+
+ggplot(starwars_chars, aes(height,mass)) +
+  geom_point() +
+  geom_text(data=starwars_chars %>% dplyr::filter(mass > 1000), aes(label=name), nudge_y = -50)
+
+ggplot(starwars_chars, aes(height,mass)) +
+  geom_point() +
+  geom_text(data=starwars_chars %>% dplyr::filter(mass == max(mass, na.rm=T)), aes(label=name), nudge_y = -50)
+
+```
+
+## Advanced: Add a linear trend line
 
 ```{r}
 
@@ -73,21 +89,4 @@ ggplot(starwars_chars, aes(height,mass)) +
 ```
 
 
-## Data inheritance: Add a label to (only) the heaviest character
-
-```{r}
-
-# hint: you can use "data=" in a geom layer to use different data for that layer 
-
-ggplot(starwars_chars, aes(height,mass)) +
-  geom_point() +
-  geom_smooth(method = "lm", se=FALSE) + 
-  geom_text(data=starwars_chars %>% dplyr::filter(mass > 1000), aes(label=name), nudge_y = -50)
-
-ggplot(starwars_chars, aes(height,mass)) +
-  geom_point() +
-  geom_smooth(method = "lm", se=FALSE) + 
-  geom_text(data=starwars_chars %>% dplyr::filter(mass == max(mass, na.rm=T)), aes(label=name), nudge_y = -50)
-
-```
 

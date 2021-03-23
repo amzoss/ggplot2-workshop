@@ -1,7 +1,7 @@
 ---
 title: "Star Wars Character Data"
 author: "Angela Zoss"
-date: "1/30/2020"
+date: "3/23/2021"
 output: html_document
 ---
 
@@ -56,22 +56,21 @@ starwars_chars <- starwars
 
 ```
 
-## Add a linear trend line
-
-```{r}
-
-# hint: look at the options for geom_smooth
-
-
-
-```
-
-
 ## Data inheritance: Add a label to (only) the heaviest character
 
 ```{r}
 
 # hint: you can use "data=" in a geom layer to use different data for that layer 
+
+
+
+```
+
+## Advanced: Add a linear trend line
+
+```{r}
+
+# hint: look at the options for geom_smooth
 
 
 

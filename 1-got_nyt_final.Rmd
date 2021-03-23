@@ -1,7 +1,7 @@
 ---
 title: "Game of Thromes Character Ratings"
 author: "Angela Zoss"
-date: "1/30/2020"
+date: "3/23/2021"
 output: html_document
 ---
 
@@ -56,7 +56,7 @@ ggplot(got, aes(x=moral,y=physical)) +
 
 # hint: check https://ggplot2.tidyverse.org/reference/#section-layer-geoms for all geom options
 
-# wrong way: aes() in geom_point does not carry down; has to be in ggplot()
+# wrong way: aes() in geom_point does not carry down; has to be in ggplot() or in both geom layers
 
 #ggplot(got) +
 #  geom_point(aes(x=moral,y=physical)) + 

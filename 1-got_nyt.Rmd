@@ -1,7 +1,7 @@
 ---
 title: "Game of Thromes Character Ratings"
 author: "Angela Zoss"
-date: "1/30/2020"
+date: "3/23/2021"
 output: html_document
 ---
 
